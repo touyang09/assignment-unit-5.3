@@ -19,10 +19,11 @@ function addToCollection(collection, title, artist, yearPublished) {
     return album;
 }
 
-//Use and Test the `addToCollection` function:
-//Add 6 albums to the `myCollection` array. Aim to have a mix of both same and different artists and published years. 
-//(Feel free to share your musical interests, or make stuff up. Totally fine either way.)
-
+// Use and Test the `addToCollection` function:
+// Add 6 albums to the `myCollection` array. Aim to have a mix of both same and different artists and published years. 
+// (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
+// console.log each album as added using the function's returned value.
+// After all are added, console.log the `myCollection` array.
 console.log('Adding Album 1:', addToCollection(myCollection, 'The Chronic', 'Dr. Dre', 1992));
 console.log('Adding Album 2:', addToCollection(myCollection, 'The Chronic II', 'Dr. Dre', 2001));
 console.log('Adding Album 3:', addToCollection(myCollection, 'Straight Out of Compton', 'NWA', 1988));
@@ -31,8 +32,16 @@ console.log('Adding Album 5:', addToCollection(myCollection, 'Hit Collections', 
 console.log('Adding Album 6:', addToCollection(myCollection, 'Greatest Hits', 'DJ Tou Yang', 2024));
 
 
+// Create a function named `showCollection`. This function should:
+// Take in a `collection` parameter. (This allows it to be reused to show any array of album objects.)
+function showCollection(collection) {
+  // Loop through the `collection` and `console.log` each album's information formatted **within a single string**, 
+  // like: `TITLE by ARTIST, published in YEARPUBLISHED`.
+  for (let album of collection) {
+    console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+  }
 
-
+}
 
 
 
