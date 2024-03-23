@@ -15,7 +15,8 @@ function addToCollection(collection, title, artist, yearPublished) {
     // Add the new object to the end of the `collection` array.
     collection.push(album);
 
-  
+    //return newly object 
+    return(album);
 }
 
 
