@@ -6,14 +6,6 @@ const myCollection = [ ];
 
 // Create a function named `addToCollection`
 function addToCollection(collection, title, artist, yearPublished) {
-  //Create a new object having the above properties.
-  let album = { 
-    title:
-    artist:
-    yearPublished:
-
-  };
-  
 
 }
 
