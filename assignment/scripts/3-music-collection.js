@@ -35,12 +35,12 @@ console.log('Adding Album 6:', addToCollection(myCollection, 'Greatest Hits', 'D
 // Create a function named `showCollection`. This function should:
 // Take in a `collection` parameter. (This allows it to be reused to show any array of album objects.)
 function showCollection(collection) {
-  // Loop through the `collection` and `console.log` each album's information formatted **within a single string**, 
+   // Loop through the `collection` and `console.log` each album's information formatted **within a single string**, 
   // like: `TITLE by ARTIST, published in YEARPUBLISHED`.
   for (let album of collection) {
     console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+ 
   }
-
 }
 
 
