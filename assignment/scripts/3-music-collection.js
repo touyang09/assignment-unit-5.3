@@ -15,9 +15,22 @@ function addToCollection(collection, title, artist, yearPublished) {
     // Add the new object to the end of the `collection` array.
     collection.push(album);
 
-    //return newly object 
-    return(album);
+    //return newly created object 
+    return album;
 }
+
+//Use and Test the `addToCollection` function:
+//Add 6 albums to the `myCollection` array. Aim to have a mix of both same and different artists and published years. 
+//(Feel free to share your musical interests, or make stuff up. Totally fine either way.)
+
+console.log('Adding Album 1:', addToCollection(myCollection, 'The Chronic', 'Dr. Dre', 1992));
+console.log('Adding Album 2:', addToCollection(myCollection, 'The Chronic II', 'Dr. Dre', 2001));
+console.log('Adding Album 3:', addToCollection(myCollection, 'Straight Out of Compton', 'NWA', 1988));
+console.log('Adding Album 4:', addToCollection(myCollection, 'Fallen Embers', 'Illenium', 2021));
+console.log('Adding Album 5:', addToCollection(myCollection, 'Hit Collections', 'Stevie B', 2014));
+console.log('Adding Album 6:', addToCollection(myCollection, 'Greatest Hits', 'DJ Tou Yang', 2024));
+
+
 
 
 
