@@ -47,13 +47,21 @@ function showCollection(collection) {
 // Take in a `collection` parameter. Remember, we want to be able to search any collection!
 // Take in an `artist` (string) parameter.
 function findByArtist(collection, artist) {
-  
+  // Create an empty array to hold any matching results, if any.
+  let matchingAlbums = [];
+
+// Loop through the `collection` 
+  for (let album of collection) {
+//and add any album objects with a matching artist to the array.
+  if (album.artist === artist) {
+    // if it matches and album object to matchingAlbums array 
+    matchingAlbums.push(album);
+  }
 }
-// Create an empty array to hold any matching results, if any.
-// Loop through the `collection` and add any album objects with a matching artist to the array.
 // Return the array with the matching results. (If no results are found, an empty array should be returned.)
+  return matchingAlbums;
 
-
+}
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
